@@ -8,11 +8,11 @@ const Exercise = () => {
             <Text style={[styles.boxText, styles.title]}>Who We Are</Text>
           </View>
 
-          <View style={styles.greenBox}>
+          <View style={[styles.greenBox]}>
             <Text style={[styles.boxText, styles.title]}>Our People</Text>
           </View>
 
-          <View style={styles.greenBox}>
+          <View style={[styles.greenBox]}>
             <Text style={[styles.boxText, styles.title]}>Our Campus</Text>
           </View>
         </View>
