@@ -1,20 +1,41 @@
-import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import React from 'react';
+import {StyleSheet, View, Text } from 'react-native';
 
-export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>Open up App.js to start working on your app!</Text>
-      <StatusBar style="auto" />
-    </View>
-  );
-}
+const Exercise = () => {
+    return (
+        <View>
+          <View style={[styles.greenBox]}>
+            <Text style={[styles.boxText, styles.title]}>Who We Are</Text>
+          </View>
+
+          <View style={styles.greenBox}>
+            <Text style={[styles.boxText, styles.title]}>Our People</Text>
+          </View>
+
+          <View style={styles.greenBox}>
+            <Text style={[styles.boxText, styles.title]}>Our Campus</Text>
+          </View>
+        </View>
+    );
+};
+export default Exercise;
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center',
+  greenBox: {
+    width: 100,
+    height: 100,
+    marginTop: 30,
+    backgroundColor: 'green',
+    borderWidth: 1,
+    borderColor: 'black'
   },
+
+  boxText: {
+    textAlign: 'center',
+    color: 'white'
+  },
+
+  title: {
+    fontWeight: 'bold'
+  }
 });
